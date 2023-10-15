@@ -43,7 +43,7 @@ blockquote::after {
   border-radius: 100vw;
   position: absolute;
   bottom: calc(-1 * var(--bubble-width) / 2);
-  background-image: url('../assets/images/icon-dice.svg');
+  background-image: url('/images/icon-dice.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.25rem;

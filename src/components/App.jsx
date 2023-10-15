@@ -10,8 +10,8 @@ const App = () => {
       <h1>Advice #{id}</h1>
       {!advice ? <p>...</p> : <blockquote>{advice}</blockquote>}
       <picture className={styles.separator}>
-        <source media='(min-width: 550px)' srcSet='src/assets/images/pattern-divider-desktop.svg'></source>
-        <img src='src/assets/images/pattern-divider-mobile.svg' alt='Horizontal rules image'></img>
+        <source media='(min-width: 550px)' srcSet='./images/pattern-divider-desktop.svg'></source>
+        <img src='./images/pattern-divider-mobile.svg' alt='Horizontal rules image'></img>
       </picture>
       <button className={styles.bubble} onClick={getAdvice}></button>
     </div>
