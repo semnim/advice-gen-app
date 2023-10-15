@@ -6,7 +6,7 @@ const useAdviceAPI = () => {
   const [currentAdvice, setCurrentAdvice] = useState(null);
 
   const getAdvice = async () => {
-    const response = await axios.get(baseUrl);
+    const response = await axios.get(`${baseUrl}?timestamp=${new Date().getTime()}`);
     setCurrentAdvice(response.data.slip);
   };
 
