@@ -1,0 +1,69 @@
+.wrapper {
+  background-color: hsl(var(--dark-grayish-blue-hsl));
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  max-width: 30rem;
+  min-width: 375px;
+  transition: all 1s ease;
+}
+
+p {
+  margin-block: 2rem;
+}
+h1 {
+  color: hsl(var(--neon-green-hsl));
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+blockquote {
+  margin-block: 2rem;
+}
+
+blockquote::before {
+  content: '“';
+}
+blockquote::after {
+  content: '”';
+}
+
+.separator {
+  margin-bottom: 2rem;
+}
+
+.bubble {
+  --bubble-width: 4rem;
+  background-color: hsl(var(--neon-green-hsl));
+  width: var(--bubble-width);
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  position: absolute;
+  bottom: calc(-1 * var(--bubble-width) / 2);
+  background-image: url('../assets/images/icon-dice.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .bubble:hover {
+    box-shadow: 0 0 1.5rem 0.125rem hsl(var(--neon-green-hsl));
+  }
+}
+.bubble:active {
+  box-shadow: 0 0 1.5rem 0.125rem hsl(var(--neon-green-hsl));
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+picture,
+img {
+  max-width: 100%;
+}
